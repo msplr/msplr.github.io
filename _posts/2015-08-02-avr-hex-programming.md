@@ -2,7 +2,7 @@
 layout: post
 date:   2015-08-2 08:00:00
 title:  "AVR programming in hex"
-categories: avr
+categories: AVR
 ---
 
 In this post I describe how I built a working program for an AVR directly in hex without using a C compiler or assembler.
