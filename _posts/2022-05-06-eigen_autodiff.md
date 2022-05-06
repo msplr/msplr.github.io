@@ -5,6 +5,8 @@ date:   2022-05-06 00:00:00
 categories: C++
 ---
 
+![Derivative Plot](/images/derivative.jpg)
+
 ## Automatic Differentiation with Eigen
 
 A probably rather unknown feature of the excellent Eigen library is the (unsupported) `AutoDiff` module.
