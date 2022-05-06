@@ -1,7 +1,7 @@
 # Site settings
-title: "nuft"
+title: "My Blog"
 email: mspieler101@gmail.com
-description: sharing my projects
+description: /* the world runs on code */
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://nuft.github.io"
 github_username:  nuft
