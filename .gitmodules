@@ -1,0 +1,3 @@
+[submodule "themes/stack"]
+	path = themes/stack
+	url = https://github.com/nuft/hugo-theme-stack.git
