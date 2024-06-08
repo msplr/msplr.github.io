@@ -1,0 +1,72 @@
+baseURL = 'http://nuft.github.io/'
+languageCode = 'en-us'
+title = 'My Blog'
+theme = 'stack'
+# theme = 'paper'
+paginate = 4                                # after how many posts to create a new page
+author = "Michael Spieler"
+copyright = "Michael Spieler"
+
+[params.footer]
+since = 2015
+customText = ""
+
+[params.sidebar]
+# emoji = "☕️"
+
+[params.sidebar.avatar]
+enabled = true
+local = true
+src = "avatar.jpg"
+
+[[menu.main]]
+name = "Home"
+pageRef = "/"
+weight = 10
+[menus.main.params]
+icon = "home"
+[[menu.main]]
+name = "About"
+pageRef = "/about/"
+weight = 20
+
+[[menu.social]]
+identifier = "github"
+name = "GitHub"
+url = "https://github.com/nuft"
+weight = 1
+
+[menu.social.params]
+icon = "brand-github"
+
+[[menu.social]]
+identifier = "twitter"
+name = "Twitter"
+url = "https://x.com/mi_spieler"
+weight = 2
+
+[menu.social.params]
+icon = "brand-x"
+
+[[menu.social]]
+identifier = "linkedin"
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/michael-spieler/"
+weight = 3
+
+[menu.social.params]
+icon = "brand-linkedin"
+
+# Related contents configuration
+[related]
+includeNewer = true
+threshold = 60
+toLower = false
+
+[[related.indices]]
+name = "tags"
+weight = 100
+
+[[related.indices]]
+name = "categories"
+weight = 200

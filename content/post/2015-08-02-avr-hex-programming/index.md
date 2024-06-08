@@ -1,9 +1,10 @@
----
-layout: post
-date:   2015-08-2 08:00:00
-title:  "AVR programming in hex"
-categories: AVR
----
++++
+author = "Michael Spieler"
+title = "AVR programming in hex"
+slug = "avr-prog"
+date = "2015-08-02"
+tags = ["Embedded"]
++++
 
 In this post I describe how I built a working program for an AVR directly in hex without using a C compiler or assembler.
 This is not directly useful, but it helps to understand how assembly instructions are represented
@@ -32,7 +33,7 @@ The instruction encoding is defined in the [AVR Instruction Set Manual](http://w
 and the register addresses you find in the register summary of the AVR's datasheet.
 
 To give an example, let's look at the line `out DDRB, r16`. The instruction is defined as follows:
-![AVR OUT instruction]({{ site.url }}/images/avr-out-instruction.jpg)
+![AVR OUT instruction](avr-out-instruction.jpg)
 Just take the 16bit opcode `1011 1AAr rrrr AAAA` and insert `r = 0x10` (r16) and `A = 0x04` (DDRB), which gives `1011 1001 0000 0100` or `0xb904` in hex.
 
 The whole program translated to binary:

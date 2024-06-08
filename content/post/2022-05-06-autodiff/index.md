@@ -1,11 +1,16 @@
----
-layout: post
-title:  "Exploring Eigen AutoDiff"
-date:   2022-05-06 00:00:00
-categories: C++
----
++++
+author = "Michael Spieler"
+title = "Exploring Eigen AutoDiff"
+slug = "eigen-autodiff"
+date = "2022-05-06"
+tags = [
+    "C++",
+    "Math"
+]
+image = "derivative.svg"
++++
 
-![Derivative Plot](/images/derivative.jpg)
+<!-- ![Derivative Plot](derivative.png) -->
 
 ## Automatic Differentiation with Eigen
 

@@ -1,9 +1,11 @@
----
-layout: post
-title:  "Flashing blackmagic firmware on ST-Link"
-date:   2015-08-24 23:00:00
-categories: ARM
----
++++
+author = "Michael Spieler"
+title = "Flashing blackmagic firmware on ST-Link"
+slug = "blackmagic-stlink"
+date = "2015-08-24"
+tags = ["Embedded"]
+image = "blackmagic-stlink-wiring.jpg"
++++
 
 The [Black Magic Probe](http://www.blacksphere.co.nz/main/blackmagic) is a great alternative firmware for the ST-Link which comes with STM32 Discovery and Nucleo devboards.
 It offers a direct debugger interface for gdb, which removes the need for openocd in the middle.
@@ -13,19 +15,19 @@ I noted the steps for myself to reproduce the procedure of flashing the blackmag
 # Build
 Get the source (commit ef574b72b14e10c964f1aa73348d3048f88d1029).
 
-{% highlight bash %}
+{{< highlight bash >}}
 $ git clone https://github.com/blacksphere/blackmagic.git
 $ cd blackmagic
 $ cd libopencm3/
 $ make lib
 $ cd ../src/
 $ make PROBE_HOST=stlink
-{% endhighlight %}
+{{< /highlight >}}
 
 # Wiring
 First desolder the four solder bridges from 'DEFAULT' and solder the 'RESERVED'.
 Connect SWD form a second ST-Link to the 4-pin jumper of the target (order: VCC, SWCLK, GND, SWDIO)
-![Flashing of the ST-Link from a Nucleo board](/images/blackmagic-stlink-wiring.jpg)
+![Flashing of the ST-Link from a Nucleo board](blackmagic-stlink-wiring.jpg)
 
 # Flash
 openocd config file openocd.cfg:
@@ -38,13 +40,14 @@ source [find target/stm32f1x_stlink.cfg]
 ~~~
 
 start openocd:
-{% highlight bash %}
+{{< highlight bash >}}
 $ openocd -f openocd.cfg
-{% endhighlight %}
+{{< /highlight >}}
 
 From another shell, connect to openocd and unlock, erase and flash the ST-Link:
 
-{% highlight bash %}
+
+{{< highlight bash >}}
 $ telnet localhost 4444
 Open On-Chip Debugger
 > init
@@ -53,7 +56,7 @@ Open On-Chip Debugger
 > stm32f1x mass_erase 0
 > flash write_bank 0 blackmagic.bin 0x2000
 > flash write_bank 0 blackmagic_dfu.bin 0
-{% endhighlight %}
+{{< /highlight >}}
 
 
 # Run
