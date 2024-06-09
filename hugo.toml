@@ -17,7 +17,7 @@ customText = ""
 [params.sidebar.avatar]
 enabled = true
 local = true
-src = "avatar.jpg"
+src = "img/avatar.jpg"
 
 [[menu.main]]
 name = "Home"
@@ -43,7 +43,7 @@ icon = "brand-github"
 identifier = "twitter"
 name = "Twitter"
 url = "https://x.com/mi_spieler"
-weight = 2
+weight = 3
 
 [menu.social.params]
 icon = "brand-x"
@@ -52,7 +52,7 @@ icon = "brand-x"
 identifier = "linkedin"
 name = "LinkedIn"
 url = "https://www.linkedin.com/in/michael-spieler/"
-weight = 3
+weight = 2
 
 [menu.social.params]
 icon = "brand-linkedin"
@@ -70,3 +70,12 @@ weight = 100
 [[related.indices]]
 name = "categories"
 weight = 200
+
+[markup]
+[markup.highlight]
+anchorLineNos = false
+noClasses = true
+codeFences = true
+lineNos = false
+#style = 'monokai'
+style = 'monokailight'
