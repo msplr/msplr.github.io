@@ -1,6 +1,6 @@
 baseURL = 'http://nuft.github.io/'
 languageCode = 'en-us'
-title = 'My Blog'
+title = "Michael's Blog"
 theme = 'stack'
 # theme = 'paper'
 paginate = 4                                # after how many posts to create a new page
