@@ -74,8 +74,6 @@ weight = 200
 [markup]
 [markup.highlight]
 anchorLineNos = false
-noClasses = true
+noClasses = false
 codeFences = true
 lineNos = false
-#style = 'monokai'
-style = 'monokailight'
