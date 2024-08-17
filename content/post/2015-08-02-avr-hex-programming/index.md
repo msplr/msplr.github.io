@@ -3,7 +3,7 @@ author = "Michael Spieler"
 title = "AVR programming in hex"
 slug = "avr-prog"
 date = "2015-08-02"
-tags = ["Embedded"]
+tags = ["embedded"]
 +++
 
 In this post I describe how I built a working program for an AVR directly in hex without using a C compiler or assembler.

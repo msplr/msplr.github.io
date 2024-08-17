@@ -7,9 +7,9 @@ date = "2023-12-08"
 # Hi there, I'm Michael 👋
 
 I'm a software engineer from Switzerland 🇨🇭 who likes robots and embedded systems.
-My interests are in [non-linear optimization](https://github.com/nuft/nls) and its applications in robotics such as MPC and SLAM.
+My interests are in real-time embedded systems, [non-linear optimization](https://github.com/nuft/nls) and its applications in robotics.
 
-At [ANYbotics](https://www.anybotics.com/) I'm developing software for industrial inspection robots.
+I'm currently working at [ANYbotics](https://www.anybotics.com/), where we're building a robotic workforce for industrial inspection.
 
 #### Open Source Work
 

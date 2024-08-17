@@ -3,7 +3,7 @@ author = "Michael Spieler"
 title = "Flashing blackmagic firmware on ST-Link"
 slug = "blackmagic-stlink"
 date = "2015-08-24"
-tags = ["Embedded"]
+tags = ["embedded"]
 image = "blackmagic-stlink-wiring.jpg"
 +++
 
